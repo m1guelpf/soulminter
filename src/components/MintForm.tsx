@@ -207,7 +207,7 @@ const ConfirmedState: FC<{ txHash: string }> = ({ txHash }) => {
 					as="a"
 					variant="secondary"
 					href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(
-						'https://soulminter.vercel.app'
+						'https://soulminter.m1guelpf.me'
 					)}&text=${encodeURIComponent('✨ Just minted a Soulbound NFT on\n\n')}`}
 					target="_blank"
 					rel="noreferrer"

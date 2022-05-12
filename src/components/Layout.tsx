@@ -6,7 +6,7 @@ const Layout: FC<{ children: ReactElement | ReactElement[] }> = ({ children }) =
 	const meta = {
 		title: 'Soulminter',
 		description: 'One-click mint for Soulbound NFTs on Ethereum, Optimism & Polygon.',
-		image: `https://soulminter.vercel.app${coverImg.src}`,
+		image: `https://soulminter.m1guelpf.me${coverImg.src}`,
 	}
 
 	return (
@@ -17,13 +17,13 @@ const Layout: FC<{ children: ReactElement | ReactElement[] }> = ({ children }) =
 				<meta name="description" content={meta.description} />
 
 				<meta property="og:type" content="website" />
-				<meta property="og:url" content="https://soulminter.vercel.app/" />
+				<meta property="og:url" content="https://soulminter.m1guelpf.me/" />
 				<meta property="og:title" content={meta.title} />
 				<meta property="og:description" content={meta.description} />
 				<meta property="og:image" content={meta.image} />
 
 				<meta property="twitter:card" content="summary_large_image" />
-				<meta property="twitter:url" content="https://soulminter.vercel.app/" />
+				<meta property="twitter:url" content="https://soulminter.m1guelpf.me/" />
 				<meta property="twitter:title" content={meta.title} />
 				<meta property="twitter:description" content={meta.description} />
 				<meta property="twitter:image" content={meta.image} />
