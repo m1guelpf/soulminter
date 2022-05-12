@@ -2,7 +2,7 @@ import UploadFile from './UploadFile'
 import { useAccount, useContractWrite, useNetwork } from 'wagmi'
 import SoulMinterABI from '@/abi/SoulMinter.abi.json'
 import { Dispatch, FC, SetStateAction, useEffect, useMemo, useState } from 'react'
-import { Button, Card, Field, FieldSet, Heading, Input, Text } from 'degen'
+import { Button, Card, Field, FieldSet, Heading, Input, Text, Textarea } from 'degen'
 import { useAddRecentTransaction } from '@rainbow-me/rainbowkit'
 import ConnectWallet from './ConnectWallet'
 import { CONTRACT_ADDR } from '@/lib/consts'
@@ -123,7 +123,7 @@ const MetadataState: FC<{
 					onChange={event => setName(event.target.value)}
 					onBlur={() => setErrors({ ...errors, name: null })}
 				/>
-				<Input
+				<Textarea
 					label="Description"
 					placeholder="You can't transfer this NFT!"
 					required
@@ -181,8 +181,6 @@ const MediaState: FC<{
 		event.preventDefault()
 
 		setErrors({ receiverAddress: !receiverAddress, ipfsURI: !ipfsURI })
-
-		console.log(receiverAddress, ipfsURI)
 
 		if (receiverAddress && ipfsURI) write({ args: [receiverAddress, ipfsURI] })
 	}
