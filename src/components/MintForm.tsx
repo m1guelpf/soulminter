@@ -62,7 +62,24 @@ const MintForm: FC = () => {
 	return (
 		<Card padding="6" shadow>
 			<Heading>Create a Soulbound NFT</Heading>
-			<Text>Soulbound NFTs are tokens you can&apos;t move. Easily create one using the form below.</Text>
+			<div className="mt-2 space-y-1">
+				<Text>
+					Soulbound NFTs are tokens you mint to an address, and then can&apos;t move afterwards. The term was{' '}
+					<a
+						className="underline"
+						target="_blank"
+						href="https://vitalik.ca/general/2022/01/26/soulbound.html"
+						rel="noreferrer"
+					>
+						coined by Vitalik
+					</a>
+					, and has been gaining more and more adoption over the past few months.
+				</Text>
+				<Text>
+					The form below allows you to <b>issue Soulbound NFTs</b> to any address with{' '}
+					<b>just a few clicks</b>.
+				</Text>
+			</div>
 			{formPage}
 		</Card>
 	)

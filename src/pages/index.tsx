@@ -18,6 +18,12 @@ const Index: FC = () => {
 				</header>
 				<MintForm />
 			</div>
+			<p className="absolute bottom-4 md:bottom-6 inset-x-0 text-center text-white">
+				Built by{' '}
+				<a className="font-semibold" href="https://twitter.com/m1guelpf" target="_blank" rel="noreferrer">
+					@m1guelpf
+				</a>
+			</p>
 		</Layout>
 	)
 }
